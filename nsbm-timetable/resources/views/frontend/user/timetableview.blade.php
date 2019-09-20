@@ -4,7 +4,7 @@
 
 @section('content')
 
-<body>
+<body background="/img/nsbmback.jpg">
         <diV class="container">
 
                 <div class="text-center">
