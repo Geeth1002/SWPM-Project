@@ -4,7 +4,7 @@
 
 @section('content')
 <body background="/img/nsbmback.jpg">
-<div class="row mb-4" style="">
+<div class="row mb-4" >
 
     <div class="col" >
             <br><br>
