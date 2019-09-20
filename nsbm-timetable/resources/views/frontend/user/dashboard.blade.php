@@ -46,24 +46,35 @@
                             </div>
 
                             <div class="card mb-4">
-                                <div class="card-header">Header</div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Info card title</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div><!--card-->
-                        </div><!--col-md-4-->
+                                <div class="card-header">Copyright © 2019</div>
+                                    <div class="card-body">
+                                        NSBM Green University Town
+                                    </div>
+                                 </div><!--card-->
+                            </div><!--col-md-4-->
 
                         <div class="col-md-8 order-2 order-sm-1">
                             <div class="row">
+                                <div class="col">                                            
+                                            <div class="col-md-12 well">
+                                                <div class="col-md-12">
+                                                    <br>
+                                                  <button class="btn btn-success btn-lg btn-block">View Timetable</button>
+                                                  <br><br>
+                                                </div>                                                
+                                            </div>                                        
+                                </div><!--col-md-6-->
+                            </div><!--row-->
+
+                            <div class="row">
                                 <div class="col">
                                     <div class="card mb-4">
                                         <div class="card-header">
-                                            Item
+                                            About US
                                         </div><!--card-header-->
 
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non qui facilis deleniti expedita fuga ipsum numquam aperiam itaque cum maxime.
+                                            The National School of Business Management is a state degree awarding institute in Sri Lanka, established under Companies Act No. 07 of 2007 and having company number PB 4833 and also it is the first ever green university in South Asia specialising in Computer sciences, Business, Engineering and Technology
                                         </div><!--card-body-->
                                     </div><!--card-->
                                 </div><!--col-md-6-->
@@ -73,25 +84,12 @@
                                 <div class="col">
                                     <div class="card mb-4">
                                         <div class="card-header">
-                                            Item
+                                            Programme Office
                                         </div><!--card-header-->
 
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non qui facilis deleniti expedita fuga ipsum numquam aperiam itaque cum maxime.
-                                        </div><!--card-body-->
-                                    </div><!--card-->
-                                </div><!--col-md-6-->
-                            </div><!--row-->
-
-                            <div class="row">
-                                <div class="col">
-                                    <div class="card mb-4">
-                                        <div class="card-header">
-                                            Item
-                                        </div><!--card-header-->
-
-                                        <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non qui facilis deleniti expedita fuga ipsum numquam aperiam itaque cum maxime.
+                                            Tel : +94 11 544 5000<br>
+                                            Email : inquiries@nsbm.lk
                                         </div><!--card-body-->
                                     </div><!--card-->
                                 </div><!--col-md-6-->
@@ -99,11 +97,12 @@
                                 <div class="col">
                                     <div class="card mb-4">
                                         <div class="card-header">
-                                            Item
+                                            School of Business
                                         </div><!--card-header-->
 
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non qui facilis deleniti expedita fuga ipsum numquam aperiam itaque cum maxime.
+                                            Tel : +94 11 544 5100<br>
+                                            Email : sob@nsbm.lk
                                         </div><!--card-body-->
                                     </div><!--card-->
                                 </div><!--col-md-6-->
@@ -113,11 +112,12 @@
                                 <div class="col">
                                     <div class="card mb-4">
                                         <div class="card-header">
-                                            Item
+                                            School of Computing
                                         </div><!--card-header-->
 
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non qui facilis deleniti expedita fuga ipsum numquam aperiam itaque cum maxime.
+                                            Tel : +94 11 544 6000<br>
+                                            Email : soc@nsbm.lk
                                         </div><!--card-body-->
                                     </div><!--card-->
                                 </div><!--col-md-6-->
@@ -125,11 +125,12 @@
                                 <div class="col">
                                     <div class="card mb-4">
                                         <div class="card-header">
-                                            Item
+                                            School of Engineering
                                         </div><!--card-header-->
 
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non qui facilis deleniti expedita fuga ipsum numquam aperiam itaque cum maxime.
+                                            Tel : +94 11 544 6100<br>
+                                            Email : infoeng@nsbm.lk
                                         </div><!--card-body-->
                                     </div><!--card-->
                                 </div><!--col-md-6-->
