@@ -14,6 +14,11 @@
             <div class="row">
 
                 <div class="col-md-12">
+                    @foreach($errors->all() as $error)
+                    <div class="alert alert-danger" role="alert">
+                        {{$error}}
+                    </div>
+                    @endforeach
                     <form method="post" action="/savett">
                     {{csrf_field()}}
 
