@@ -36,7 +36,7 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
     include_route_files(__DIR__.'/backend/');
 });
 Route::get('/timetableview', function () {
-
+    //$date=date('Y-m-d');
     //return view('\frontend\user\timetableview');
     $data = Timetable::all();
     return view('frontend.user.timetableview')->withTimeTable($data);

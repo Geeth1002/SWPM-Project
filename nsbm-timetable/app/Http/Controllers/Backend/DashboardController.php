@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\DB;
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
@@ -15,11 +15,12 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $data = Timetable::all();
+       $data = Timetable::all();
 
 
-        return view('backend.dashboard')->withTimeTable($data);
-        
+
+       return view('backend.dashboard')->withTimeTable($data);
+
 
     }
 }

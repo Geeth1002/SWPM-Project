@@ -32,11 +32,14 @@ class TimetableController extends Controller
        $timetable->date=$request->mdate;
        $timetable->time=$request->mtime;
        $timetable->save();
-
+       return redirect()->back();
+       //$date=date('Y-m-d');
        $data = Timetable::all();
-
+       //$data =DB::table('timetables')->where ( 'timetables.date', 'LIKE', '%' . $date . '%' );
+        //$data =DB::table('timetables')->where ( 'timetables.date'==$date );
 
         return view('frontend.user.timetableview')->withTimeTable($data);
+       
     }
 
 }
