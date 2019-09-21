@@ -19,7 +19,7 @@ class DashboardController extends Controller
 
 
         return view('backend.dashboard')->withTimeTable($data);
-        return view('frontend.user.timetableview')->withTimeTable($data);
+        
 
     }
 }

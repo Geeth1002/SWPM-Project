@@ -16,7 +16,7 @@
                                 <br>
                                 <table>
                                         <th><h1>Time Table &emsp13;-&emsp13;</h1></th>
-                                        <th><h1>2019-09-11</h1></th>
+                                        <th><h1>{{date('Y-m-d')}}</h1></th>
                                 </table>
                                         <br>
 

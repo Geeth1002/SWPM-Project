@@ -35,6 +35,7 @@ class TimetableController extends Controller
 
        $data = Timetable::all();
 
+
         return view('frontend.user.timetableview')->withTimeTable($data);
     }
 
