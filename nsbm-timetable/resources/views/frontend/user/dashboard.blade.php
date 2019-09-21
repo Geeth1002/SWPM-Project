@@ -55,14 +55,14 @@
 
                         <div class="col-md-8 order-2 order-sm-1">
                             <div class="row">
-                                <div class="col">                                            
+                                <div class="col">
                                             <div class="col-md-12 well">
                                                 <div class="col-md-12">
                                                     <br>
-                                                  <button class="btn btn-success btn-lg btn-block">View Timetable</button>
+                                                  <a href="/timetableview" class="btn btn-success btn-lg btn-block">View Timetable</a>
                                                   <br><br>
-                                                </div>                                                
-                                            </div>                                        
+                                                </div>
+                                            </div>
                                 </div><!--col-md-6-->
                             </div><!--row-->
 
