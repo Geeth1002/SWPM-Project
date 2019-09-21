@@ -3,7 +3,7 @@
 @section('title', app_name() . ' | ' . __('strings.backend.dashboard.title'))
 
 @section('content')
-    
+
 <diV class="container">
 
         <div class="text-center">
@@ -34,6 +34,39 @@
                         <input type="submit" class="btn btn-primary" value="Submit">
                         <input type="button" class="btn btn-warning" value="Clear" onclick="Clear()"  >
                     </form>
+
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>batch</th>
+                                <th>hall</th>
+                                <th>module</th>
+                                <th>lecturer</th>
+                                {{-- <th>@lang('labels.backend.access.users.table.other_permissions')</th>
+                                <th>@lang('labels.backend.access.users.table.social')</th>
+                                <th>@lang('labels.backend.access.users.table.last_updated')</th>
+                                <th>@lang('labels.general.actions')</th> --}}
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($timeTable as $data)
+                                <tr>
+                                    <td>{{ $data->id }}</td>
+                                    <td>{{ $data->batch }}</td>
+                                    <td>{{ $data->hall }}</td>
+                                    <td>{{ $data->module }}</td>
+                                    <td>{{ $data->lecturer }}</td>
+                                    {{-- <td>{{ $user->permissions_label }}</td>
+                                    <td>@include('backend.auth.user.includes.social-buttons', ['user' => $user])</td>
+                                    <td>{{ $user->updated_at->diffForHumans() }}</td>
+                                    <td>@include('backend.auth.user.includes.actions', ['user' => $user])</td> --}}
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    </div>
 
                     <diV class="container">
 

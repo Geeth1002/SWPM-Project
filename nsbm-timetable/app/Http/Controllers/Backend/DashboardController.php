@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Timetable;
 
 /**
  * Class DashboardController.
@@ -14,6 +15,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('backend.dashboard');
+        $data = Timetable::all();
+
+        return view('backend.dashboard')->withTimeTable($data);
     }
 }
