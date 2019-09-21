@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\TimetableController;
 
 /*
  * Global Routes
@@ -37,3 +38,5 @@ Route::get('/timetableview', function () {
 
     return view('\frontend\user\timetableview');
 });
+
+Route::post('savett', 'TimetableController@store');

@@ -8,7 +8,7 @@ use App\Timetable;
 class TimetableController extends Controller
 {
     public function store(Request $request){
-        $timetable=new Timetable;
-        return redirect()->back();
+       //dd($request->all());
+       
     }
 }
