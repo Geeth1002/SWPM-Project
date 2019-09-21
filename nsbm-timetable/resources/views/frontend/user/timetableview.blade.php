@@ -3,7 +3,7 @@
 @section('title', app_name() . ' | ' . __('navs.general.home'))
 
 @section('content')
-
+@can('view backend')
 <body background="/img/nsbmback.jpg">
         <diV class="container">
 
@@ -43,4 +43,5 @@
 
 
 </body>
+@endcan
 @endsection
