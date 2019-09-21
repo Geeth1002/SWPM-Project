@@ -16,9 +16,9 @@ class DashboardController extends Controller
      */
     public function index()
     {
-       //$data = Timetable::all();
+       $data = Timetable::all();
 
-       $data = DB::table('timetables')->whereDate('date', '=', date('Y-m-d'))->get();
+       //$data = DB::table('timetables')->whereDate('date', '=', date('Y-m-d'))->get();
 
        return view('backend.dashboard')->withTimeTable($data);
 

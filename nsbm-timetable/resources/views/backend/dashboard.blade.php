@@ -72,18 +72,27 @@
                                                     <br>
 
                                         <table class="table table-dark">
+                                            <th>ID</th>
                                             <th>Batch Name</th>
                                             <th>Hall/Lab</th>
                                             <th>Module</th>
                                             <th>Lecture</th>
+                                            <th>Date</th>
                                             <th>Time</th>
+                                            <th>Created at</th>
+                                            <th>Updated at</th>
+                                            <th>Action</th>
                                             @foreach($timeTable as $data)
                                             <tr>
+                                                <td>{{ $data->id}}</td>
                                                 <td>{{ $data->batch}}</td>
                                                 <td>{{ $data->hall }}</td>
                                                 <td>{{ $data->module }}</td>
                                                 <td>{{ $data->lecturer }}</td>
+                                                <td>{{ $data->date }}</td>
                                                 <td>{{ $data->time }}</td>
+                                                <td>{{ $data->created_at }}</td>
+                                                <td>{{ $data->updated_at }}</td>
                                             </tr>
                                              @endforeach
                                         </table>
