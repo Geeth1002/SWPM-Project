@@ -30,7 +30,7 @@ class TimetableController extends Controller
        $timetable->save();
 
        $data=Timetable::all();
-       dd($data);
-      // return redirect()->back();
+       //dd($data);
+       return redirect()->back();
     }
 }
