@@ -1,6 +1,6 @@
 ~ Welcome to NSBM Smart Timetable ~
 
-01. Clone the project. (https://github.com/Geeth1002/SWPM-Projects.git)
+01. Clone the project. (https://github.com/Geeth1002/SWPM-Project.git)
 02. Create database in phpmyadmin (DB Name : nsbmtimetable).
 03. Open cloned project in visual studio code.
 04. Open terminal.
