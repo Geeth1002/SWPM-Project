@@ -59,9 +59,9 @@
                                             <div class="col-md-12 well">
                                                 <div class="col-md-12">
                                                     <br>
-                                                    @can('view backend')
+
                                                   <a href="/timetableview" class="btn btn-success btn-lg btn-block">View Timetable</a>
-                                                  @endcan
+
                                                   <br><br>
                                                 </div>
                                             </div>

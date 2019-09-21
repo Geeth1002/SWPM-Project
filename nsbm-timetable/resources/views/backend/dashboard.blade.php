@@ -9,6 +9,23 @@
         <div class="text-center">
 
             <br><h2>Welcome Admin</h2><br>
+            <div class="row">
+                <div class="col">
+                            <div class="col-md-12 well">
+                                <div class="col-md-12">
+                                    <br>
+
+                                  <a href="/timetableview" class="btn btn-success btn-lg btn-block">View Timetable</a>
+                                  <a href="/dashboard" class="btn btn-success btn-lg btn-block">View Your Profile</a>
+
+
+                                  <br><br>
+                                </div>
+                            </div>
+                </div><!--col-md-6-->
+            </div><!--row-->
+
+
             <br><h4>Create / Update Timetables</h4><br><br>
 
 
