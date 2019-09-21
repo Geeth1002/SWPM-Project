@@ -8,7 +8,7 @@
 06. Type 'composer intall' & press enter.
 07. After installing it type 'composer update' & press enter.
 08. Then type 'cp .env.example .env' & press enter.
-09. Select .env file in file directory and change DBConnection details (DB_DATABASE=nsbmtimetable,DB_USERNAME=root,DB_PASSWORD=)
+09. Select .env file in file directory and change DBConnection details (DB_DATABASE=nsbmtimetable,DB_USERNAME=root,DB_PASSWORD=null)
 10. Then type 'php artisan key:generate' & press enter.
 11. Then type 'php artisan migrate' & press enter.
 12. Then type 'php artisan db:seed' & press enter.
