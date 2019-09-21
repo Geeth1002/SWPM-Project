@@ -26,7 +26,7 @@
             </div><!--row-->
 
 
-            <br><h4>Create / Update Timetables</h4><br><br>
+            <br><h2>Create / Add Timetables</h2><br><br>
 
 
             <div class="row">
@@ -66,7 +66,7 @@
 
 
                                             <table>
-                                                    <th><h2>Time Table View</h2></th>
+                                                    <th><h2>Time Table Data View / Update / Delete</h2></th>
 
                                             </table>
                                                     <br>
