@@ -15,9 +15,14 @@
 13. Then type 'php artisan serve' & press enter.
 14. Laravel development server started at <http://127.0.0.1:8000>
 
-~ Demo Credentials ~
+~ Demo Credentials Admin ~
 
   User: admin@admin.com
+  Password: secret
+  
+  ~ Demo Credentials User ~
+
+  User: user@user.com
   Password: secret
 ___________________________________________________________________________________________________________________________________
 Team : Anonymous
