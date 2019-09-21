@@ -93,7 +93,10 @@
                                                 <td>{{ $data->time }}</td>
                                                 <td>{{ $data->created_at }}</td>
                                                 <td>{{ $data->updated_at }}</td>
-                                                <td><a href="/deleterecode/{{ $data->id}}" class ="btn btn-danger">Delete</a></td>
+                                                <td>
+                                                    <a href="/updaterecode/{{ $data->id}}" class ="btn btn-success">Update</a>
+                                                    <a href="/deleterecode/{{ $data->id}}" class ="btn btn-danger">Delete</a>
+                                                </td>
                                             </tr>
                                              @endforeach
                                         </table>
