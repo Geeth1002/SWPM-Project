@@ -26,15 +26,15 @@
                                 <th>Module</th>
                                 <th>Lecture</th>
                                 <th>Time</th>
-
+                                @foreach($timeTable as $data)
                                 <tr>
-                                    <td>17.1 UGC</td>
-                                    <td>L-102</td>
-                                    <td>SWPM</td>
-                                    <td>Mr. Chamen</td>
-                                    <td>9.00</td>
+                                    <td>{{ $data->batch}}</td>
+                                                <td>{{ $data->hall }}</td>
+                                                <td>{{ $data->module }}</td>
+                                                <td>{{ $data->lecturer }}</td>
+                                                <td>{{ $data->time }}</td>
                                 </tr>
-
+                                @endforeach
                             </table>
                         </div>
                     </div>

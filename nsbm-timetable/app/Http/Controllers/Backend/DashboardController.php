@@ -17,6 +17,9 @@ class DashboardController extends Controller
     {
         $data = Timetable::all();
 
+
         return view('backend.dashboard')->withTimeTable($data);
+        return view('frontend.user.timetableview')->withTimeTable($data);
+
     }
 }

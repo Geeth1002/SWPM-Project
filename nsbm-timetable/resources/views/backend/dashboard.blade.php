@@ -35,38 +35,7 @@
                         <input type="button" class="btn btn-warning" value="Clear" onclick="Clear()"  >
                     </form>
 
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th>id</th>
-                                <th>batch</th>
-                                <th>hall</th>
-                                <th>module</th>
-                                <th>lecturer</th>
-                                {{-- <th>@lang('labels.backend.access.users.table.other_permissions')</th>
-                                <th>@lang('labels.backend.access.users.table.social')</th>
-                                <th>@lang('labels.backend.access.users.table.last_updated')</th>
-                                <th>@lang('labels.general.actions')</th> --}}
-                            </tr>
-                            </thead>
-                            <tbody>
-                            @foreach($timeTable as $data)
-                                <tr>
-                                    <td>{{ $data->id }}</td>
-                                    <td>{{ $data->batch }}</td>
-                                    <td>{{ $data->hall }}</td>
-                                    <td>{{ $data->module }}</td>
-                                    <td>{{ $data->lecturer }}</td>
-                                    {{-- <td>{{ $user->permissions_label }}</td>
-                                    <td>@include('backend.auth.user.includes.social-buttons', ['user' => $user])</td>
-                                    <td>{{ $user->updated_at->diffForHumans() }}</td>
-                                    <td>@include('backend.auth.user.includes.actions', ['user' => $user])</td> --}}
-                                </tr>
-                            @endforeach
-                            </tbody>
-                        </table>
-                    </div>
+
 
                     <diV class="container">
 
@@ -77,27 +46,28 @@
                                     <div class="col-md-12">
 
                                             <br><br><br>
+
                                             <table>
                                                     <th><h1>Time Table &emsp13;-&emsp13;</h1></th>
-                                                    <th><h1>2019-09-11</h1></th>
+                                                    <th><h1>5615</h1></th>
                                             </table>
                                                     <br>
 
-                                        <table class="table table-light">
+                                        <table class="table table-dark">
                                             <th>Batch Name</th>
                                             <th>Hall/Lab</th>
                                             <th>Module</th>
                                             <th>Lecture</th>
                                             <th>Time</th>
-
+                                            @foreach($timeTable as $data)
                                             <tr>
-                                                <td>17.1 UGC</td>
-                                                <td>L-102</td>
-                                                <td>SWPM</td>
-                                                <td>Mr. Chamen</td>
-                                                <td>9.00</td>
+                                                <td>{{ $data->batch}}</td>
+                                                <td>{{ $data->hall }}</td>
+                                                <td>{{ $data->module }}</td>
+                                                <td>{{ $data->lecturer }}</td>
+                                                <td>{{ $data->time }}</td>
                                             </tr>
-
+                                             @endforeach
                                         </table>
                                     </div>
                                 </div>

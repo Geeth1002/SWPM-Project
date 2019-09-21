@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\TimetableController;
+use App\Timetable;
 
 /*
  * Global Routes
@@ -36,7 +37,9 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
 });
 Route::get('/timetableview', function () {
 
-    return view('\frontend\user\timetableview');
+    //return view('\frontend\user\timetableview');
+    $data = Timetable::all();
+    return view('frontend.user.timetableview')->withTimeTable($data);
 });
 
 Route::post('savett', 'TimetableController@store');

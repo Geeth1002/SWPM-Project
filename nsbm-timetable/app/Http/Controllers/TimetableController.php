@@ -7,6 +7,10 @@ use App\Timetable;
 
 class TimetableController extends Controller
 {
+
+
+
+
     public function store(Request $request){
        //dd($request->all());
        $timetable=new Timetable;
@@ -29,8 +33,9 @@ class TimetableController extends Controller
        $timetable->time=$request->mtime;
        $timetable->save();
 
-       $data=Timetable::all();
-       //dd($data);
-       return redirect()->back();
+       $data = Timetable::all();
+
+        return view('frontend.user.timetableview')->withTimeTable($data);
     }
+
 }
