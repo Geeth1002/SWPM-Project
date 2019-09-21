@@ -3,6 +3,7 @@
 @section('title', app_name() . ' | ' . __('strings.backend.dashboard.title'))
 
 @section('content')
+    
 <diV class="container">
 
         <div class="text-center">
@@ -19,7 +20,7 @@
                         {{$error}}
                     </div>
                     @endforeach
-                    <form method="post" action="/savett">
+                    <form id="myForm" method="post" action="/savett">
                     {{csrf_field()}}
 
 
@@ -31,6 +32,6 @@
                         <input type="text" class="form-control" name="mtime" placeholder="Time"><br>
                         <br>
                         <input type="submit" class="btn btn-primary" value="Submit">
-                        <input type="button" class="btn btn-warning" value="Clear">
+                        <input type="button" class="btn btn-warning" value="Clear" onclick="Clear()"  >
                     </form>
 @endsection

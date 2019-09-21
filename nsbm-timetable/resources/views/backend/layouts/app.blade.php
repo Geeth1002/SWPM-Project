@@ -11,6 +11,11 @@
     <title>@yield('title', app_name())</title>
     <meta name="description" content="@yield('meta_description', 'Laravel Boilerplate')">
     <meta name="author" content="@yield('meta_author', 'Anthony Rappa')">
+    <script>
+        function Clear() {
+            document.getElementById("myForm").reset();
+    }
+    </script>
     @yield('meta')
 
     {{-- See https://laravel.com/docs/5.5/blade#stacks for usage --}}
