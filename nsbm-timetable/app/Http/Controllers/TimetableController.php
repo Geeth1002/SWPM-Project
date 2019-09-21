@@ -28,6 +28,9 @@ class TimetableController extends Controller
        $timetable->date=$request->mdate;
        $timetable->time=$request->mtime;
        $timetable->save();
-       return redirect()->back();
+
+       $data=Timetable::all();
+       dd($data);
+      // return redirect()->back();
     }
 }
