@@ -66,8 +66,8 @@
 
 
                                             <table>
-                                                    <th><h1>Time Table &emsp13;-&emsp13;</h1></th>
-                                            <th><h1>{{date('Y-m-d')}}</h1></th>
+                                                    <th><h2>Time Table View</h2></th>
+
                                             </table>
                                                     <br>
 
@@ -93,6 +93,7 @@
                                                 <td>{{ $data->time }}</td>
                                                 <td>{{ $data->created_at }}</td>
                                                 <td>{{ $data->updated_at }}</td>
+                                                <td><a href="/deleterecode/{{ $data->id}}" class ="btn btn-danger">Delete</a></td>
                                             </tr>
                                              @endforeach
                                         </table>

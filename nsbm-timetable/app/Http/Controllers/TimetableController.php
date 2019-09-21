@@ -34,10 +34,16 @@ class TimetableController extends Controller
        $timetable->time=$request->mtime;
        $timetable->save();
        return redirect()->back();
-       
+
         $data = DB::table('timetables')->whereDate('date', '=', date('Y-m-d'))->get();
         return view('frontend.user.timetableview')->withTimeTable($data);
 
+    }
+    public function deleterecode($id){
+        
+        $timetable=Timetable::find($id);
+        $timetable->delete();
+        return redirect()->back();
     }
 
 }

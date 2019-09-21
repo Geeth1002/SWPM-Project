@@ -46,3 +46,5 @@ Route::get('/timetableview', function () {
 });
 
 Route::post('savett', 'TimetableController@store');
+
+Route::get('/deleterecode/{id}','TimetableController@deleterecode');
