@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
-
 use App\Timetable;
 
 class TimetableController extends Controller
@@ -34,11 +34,8 @@ class TimetableController extends Controller
        $timetable->time=$request->mtime;
        $timetable->save();
        return redirect()->back();
-       //$date=date('Y-m-d');
-       $data = Timetable::all();
-       //$data =DB::table('timetables')->where ( 'timetables.date', 'LIKE', '%' . $date . '%' );
-        //$data =DB::table('timetables')->where ( 'timetables.date'==$date );
-       // $data = DB::table('timetables')->whereDate('date', '=', date('Y-m-d'))->get();
+       
+        $data = DB::table('timetables')->whereDate('date', '=', date('Y-m-d'))->get();
         return view('frontend.user.timetableview')->withTimeTable($data);
 
     }

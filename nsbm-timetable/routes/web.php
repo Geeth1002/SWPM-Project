@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\TimetableController;
 use App\Timetable;
@@ -38,7 +39,9 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
 Route::get('/timetableview', function () {
     //$date=date('Y-m-d');
     //return view('\frontend\user\timetableview');
-    $data = Timetable::all();
+   //$data = Timetable::all();
+
+    $data = DB::table('timetables')->whereDate('date', '=', date('Y-m-d'))->get();
     return view('frontend.user.timetableview')->withTimeTable($data);
 });
 
