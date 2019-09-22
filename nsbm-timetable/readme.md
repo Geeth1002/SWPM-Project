@@ -1,47 +1,34 @@
-## Laravel Boilerplate (Current: Laravel 6.0) ([Demo](http://134.209.123.206/))
+~ Welcome to NSBM Smart Timetable ~
 
-[![Latest Stable Version](https://poser.pugx.org/rappasoft/laravel-boilerplate/v/stable)](https://packagist.org/packages/rappasoft/laravel-boilerplate)
-[![Latest Unstable Version](https://poser.pugx.org/rappasoft/laravel-boilerplate/v/unstable)](https://packagist.org/packages/rappasoft/laravel-boilerplate) 
-<br/>
-[![StyleCI](https://styleci.io/repos/30171828/shield?style=plastic)](https://styleci.io/repos/30171828/shield?style=plastic)
-[![CircleCI](https://circleci.com/gh/rappasoft/laravel-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/rappasoft/laravel-boilerplate/tree/master)
-<br/>
-![GitHub contributors](https://img.shields.io/github/contributors/rappasoft/laravel-boilerplate.svg)
-![GitHub stars](https://img.shields.io/github/stars/rappasoft/laravel-boilerplate.svg?style=social)
+Based on Laravel - The PHP Framework For Web Artisans
 
-### Demo Credentials
+Use a Laravel Boilerplate Project - http://laravel-boilerplate.com ... an easy to learn API and is built on a Bootstrap foundation with a front and backend architecture.
 
-**User:** admin@admin.com  
-**Password:** secret
+Clone the project. (https://github.com/Geeth1002/SWPM-Project.git)
+Open XAMPP contorl panel and turn on Apache and MySQL Servers.
+Create empty database in phpmyadmin (DB Name : nsbmtimetable).
+Open cloned project in visual studio code.
+Open terminal.
+Go to the folder location from terminal.
+Type 'composer intall' & press enter.
+After installing it type 'composer update' & press enter.
+Then type 'cp .env.example .env' & press enter.
+Select .env file in file directory and change DBConnection details (DB_DATABASE=nsbmtimetable,DB_USERNAME=root,DB_PASSWORD=null)
+Then type 'php artisan key:generate' & press enter.
+Then type 'php artisan migrate' & press enter.
+Then type 'php artisan db:seed' & press enter.
+Then type 'php artisan serve' & press enter.
+Laravel development server started at http://127.0.0.1:8000
+~ Demo Credentials Admin ~
 
-### Official Documentation
+User: admin@admin.com Password: secret
 
-[Click here for the official documentation](http://laravel-boilerplate.com)
+~ Demo Credentials User ~
 
-### Slack Channel
+User: user@user.com Password: secret
 
-Please join us in our Slack channel to get faster responses to your questions. Get your invite here: https://laravel-boilerplate.herokuapp.com
+Team : Anonymous
 
-### Introduction
+Members :
 
-Laravel Boilerplate provides you with a massive head start on any size web application. It comes with a full featured access control system out of the box with an easy to learn API and is built on a Bootstrap foundation with a front and backend architecture. We have put a lot of work into it and we hope it serves you well and saves you time!
-
-### Issues
-
-If you come across any issues please [report them here](https://github.com/rappasoft/laravel-boilerplate/issues).
-
-### Contributing
-
-Thank you for considering contributing to the Laravel Boilerplate project! Please feel free to make any pull requests, or e-mail me a feature request you would like to see in the future to Anthony Rappa at rappa819@gmail.com.
-
-### Security Vulnerabilities
-
-If you discover a security vulnerability within this boilerplate, please send an e-mail to Anthony Rappa at rappa819@gmail.com, or create a pull request if possible. All security vulnerabilities will be promptly addressed.
-
-### Donations
-
-If you would like to help the continued efforts of this project, any size [donations](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=JJWUZ4E9S9SFG&lc=US&item_name=Laravel%205%20Boilerplate&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted) are welcomed and highly appreciated.
-
-### License
-
-MIT: [http://anthony.mit-license.org](http://anthony.mit-license.org)
+Geeth Kavinda (BSC-NSBM-SWE-17.1-040 | 10018721) Thameera Malinga (BSC-NSBM-SWE-17.1-034 | 10018722) Sahan Oshan (BSC-NSBM-SWE-17.1-002 | 10018645) Sewmini Jayawardana (BSC-NSBM-SWE-17.1-024 | 10018636) Nawoda Sandamini (BSC-PLY-COM-17.1-124 | 10018732)
