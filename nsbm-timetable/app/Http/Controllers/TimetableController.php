@@ -40,10 +40,38 @@ class TimetableController extends Controller
 
     }
     public function deleterecode($id){
-        
+
         $timetable=Timetable::find($id);
         $timetable->delete();
         return redirect()->back();
     }
+
+    public function updaterecode($id){
+        $timetableById=Timetable::where('id',$id)->first();
+        return view('backend.editrecode',['timetableById'=>$timetableById]);
+    }
+
+    public function storeupdate(Request $request){
+        $id=$request->uid;
+        $batch=$request->ubatch;
+        $hall=$request->uhall;
+        $module=$request->umodule;
+        $lecturer=$request->ulecture;
+        $date=$request->udate;
+        $time=$request->utime;
+
+        $timetable=Timetable::find($id);
+
+        $timetable->batch=$batch;
+        $timetable->hall=$hall;
+        $timetable->module=$module;
+        $timetable->lecturer=$lecturer;
+        $timetable->date=$date;
+        $timetable->time=$time;
+
+       $timetable->save();
+       return redirect()->back();
+
+     }
 
 }
