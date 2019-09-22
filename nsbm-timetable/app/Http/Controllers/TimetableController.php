@@ -70,7 +70,7 @@ class TimetableController extends Controller
         $timetable->time=$time;
 
        $timetable->save();
-       return redirect()->back();
+       return redirect('/admin/dashboard/')->with('msg','Data Updated Sucessfully');
 
      }
 
