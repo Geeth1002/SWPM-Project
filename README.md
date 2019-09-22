@@ -1,5 +1,9 @@
 ~ Welcome to NSBM Smart Timetable ~
 
+Based on Laravel - The PHP Framework For Web Artisans
+
+Use a Laravel Boilerplate Project - http://laravel-boilerplate.com ... an easy to learn API and is built on a Bootstrap foundation with a front and backend architecture.
+
 01. Clone the project. (https://github.com/Geeth1002/SWPM-Project.git)
 02. Open XAMPP contorl panel and turn on Apache and MySQL Servers. 
 03. Create empty database in phpmyadmin (DB Name : nsbmtimetable).
