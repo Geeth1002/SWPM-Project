@@ -8,7 +8,7 @@
 
         <div class="text-center">
 
-            <br><h2>Welcome Admin</h2><br>
+            <br><h2><b>Welcome Admin</b></h2><br>
             <div class="row">
                 <div class="col">
                             <div class="col-md-12 well">
@@ -26,7 +26,7 @@
             </div><!--row-->
 
 
-            <br><h2>Create / Add Timetables</h2><br><br>
+            <br><h2><b>Create / Add Timetables</b></h2><br><br>
 
 
             <div class="row">
@@ -45,8 +45,8 @@
                         <input type="text" class="form-control" name="mhall" placeholder="Hall/Lab"><br>
                         <input type="text" class="form-control" name="mmodule" placeholder="Module"><br>
                         <input type="text" class="form-control" name="mlecture" placeholder="Lecture"><br>
-                        <input type="text" class="form-control" name="mdate" placeholder="Date"><br>
-                        <input type="text" class="form-control" name="mtime" placeholder="Time"><br>
+                        <input type="text" class="form-control" name="mdate" placeholder="Date (Y-M-D)"><br>
+                        <input type="text" class="form-control" name="mtime" placeholder="Time (HH:MM-HH:MM)"><br>
                         <br>
                         <input type="submit" class="btn btn-primary" value="Submit">
                         <input type="button" class="btn btn-warning" value="Clear" onclick="Clear()"  >
@@ -66,7 +66,7 @@
 
 
                                             <table>
-                                                    <th><h2>Time Table Data View / Update / Delete</h2></th>
+                                                    <th><h2><b>Time Table Data View / Update / Delete</b></h2></th>
 
                                             </table>
                                                     <br>
