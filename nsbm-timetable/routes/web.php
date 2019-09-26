@@ -40,9 +40,14 @@ Route::get('/timetableview', function () {
     //$date=date('Y-m-d');
     //return view('\frontend\user\timetableview');
    //$data = Timetable::all();
+    if(Auth::check()){
+        $data = DB::table('timetables')->whereDate('date', '=', date('Y-m-d'))->get();
+        return view('frontend.user.timetableview')->withTimeTable($data);
+    }
+else{
 
-    $data = DB::table('timetables')->whereDate('date', '=', date('Y-m-d'))->get();
-    return view('frontend.user.timetableview')->withTimeTable($data);
+        return redirect('/login')->with('msg','Logged in needed');
+    }
 });
 
 Route::post('savett', 'TimetableController@store');
