@@ -44,7 +44,7 @@
                         <input type="text" class="form-control" name="mbatch" placeholder="Batch Name"><br>
                         <input type="text" class="form-control" name="mhall" placeholder="Hall/Lab"><br>
                         <input type="text" class="form-control" name="mmodule" placeholder="Module"><br>
-                        <input type="text" class="form-control" name="mlecture" placeholder="Lecture"><br>
+                        <input type="text" class="form-control" name="mlecture" placeholder="Lecturer"><br>
                         <input type="text" class="form-control" name="mdate" placeholder="Date (Y-M-D)"><br>
                         <input type="text" class="form-control" name="mtime" placeholder="Time (HH:MM-HH:MM)"><br>
                         <br>
