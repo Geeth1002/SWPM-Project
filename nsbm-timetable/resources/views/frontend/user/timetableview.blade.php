@@ -11,7 +11,7 @@
 
                     <div class="row">
 
-                        <div class="col-md-12">
+                        <div class="col-md-12 table-responsive">
 
                                 <br>
                                 <table>
@@ -20,7 +20,7 @@
                                 </table>
                                         <br>
 
-                            <table class="table table-light">
+                            <table class="table table-light table-responsive">
                                 <th>Batch Name</th>
                                 <th>Hall/Lab</th>
                                 <th>Module</th>
