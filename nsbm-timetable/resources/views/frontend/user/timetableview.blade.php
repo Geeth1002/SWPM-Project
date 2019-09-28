@@ -20,7 +20,7 @@
                                 </table>
                                         <br>
 
-                            <table class="table table-light table-responsive">
+                            <table class="table table-light ">
                                 <th>Batch Name</th>
                                 <th>Hall/Lab</th>
                                 <th>Module</th>
