@@ -10,13 +10,11 @@
                 <h4 class="card-title mb-0">
                     @lang('labels.backend.access.roles.management')
                 </h4>
-            </div><!--col-->
-
+            </div>
             <div class="col-sm-7 pull-right">
                 @include('backend.auth.role.includes.header-buttons')
-            </div><!--col-->
-        </div><!--row-->
-
+            </div>
+        </div>
         <div class="row mt-4">
             <div class="col">
                 <div class="table-responsive">
@@ -53,21 +51,20 @@
                         </tbody>
                     </table>
                 </div>
-            </div><!--col-->
-        </div><!--row-->
+            </div>
+        </div>
         <div class="row">
             <div class="col-7">
                 <div class="float-left">
                     {!! $roles->total() !!} {{ trans_choice('labels.backend.access.roles.table.total', $roles->total()) }}
                 </div>
-            </div><!--col-->
-
+            </div>
             <div class="col-5">
                 <div class="float-right">
                     {!! $roles->render() !!}
                 </div>
-            </div><!--col-->
-        </div><!--row-->
-    </div><!--card-body-->
-</div><!--card-->
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

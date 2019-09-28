@@ -16,8 +16,8 @@
                         @lang('labels.backend.access.users.management')
                         <small class="text-muted">@lang('labels.backend.access.users.edit')</small>
                     </h4>
-                </div><!--col-->
-            </div><!--row-->
+                </div>
+            </div>
 
             <hr>
 
@@ -32,8 +32,8 @@
                                 ->placeholder(__('validation.attributes.backend.access.users.first_name'))
                                 ->attribute('maxlength', 191)
                                 ->required() }}
-                        </div><!--col-->
-                    </div><!--form-group-->
+                        </div>
+                    </div>
 
                     <div class="form-group row">
                         {{ html()->label(__('validation.attributes.backend.access.users.last_name'))->class('col-md-2 form-control-label')->for('last_name') }}
@@ -44,8 +44,8 @@
                                 ->placeholder(__('validation.attributes.backend.access.users.last_name'))
                                 ->attribute('maxlength', 191)
                                 ->required() }}
-                        </div><!--col-->
-                    </div><!--form-group-->
+                        </div>
+                    </div>
 
                     <div class="form-group row">
                         {{ html()->label(__('validation.attributes.backend.access.users.email'))->class('col-md-2 form-control-label')->for('email') }}
@@ -56,8 +56,8 @@
                                 ->placeholder(__('validation.attributes.backend.access.users.email'))
                                 ->attribute('maxlength', 191)
                                 ->required() }}
-                        </div><!--col-->
-                    </div><!--form-group-->
+                        </div>
+                    </div>
 
                     <div class="form-group row">
                         {{ html()->label('Abilities')->class('col-md-2 form-control-label') }}
@@ -101,7 +101,7 @@
                                                                 @lang('labels.backend.access.users.all_permissions')
                                                             @endif
                                                         </div>
-                                                    </div><!--card-->
+                                                    </div>
                                                 @endforeach
                                             @endif
                                         </td>
@@ -124,23 +124,23 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div><!--col-->
-                    </div><!--form-group-->
-                </div><!--col-->
-            </div><!--row-->
-        </div><!--card-body-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="card-footer">
             <div class="row">
                 <div class="col">
                     {{ form_cancel(route('admin.auth.user.index'), __('buttons.general.cancel')) }}
-                </div><!--col-->
+                </div>
 
                 <div class="col text-right">
                     {{ form_submit(__('buttons.general.crud.update')) }}
-                </div><!--row-->
-            </div><!--row-->
-        </div><!--card-footer-->
-    </div><!--card-->
+                </div>
+            </div>
+        </div>
+    </div>
 {{ html()->closeModelForm() }}
 @endsection

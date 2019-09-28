@@ -10,7 +10,7 @@
                     <strong>
                         @lang('labels.frontend.auth.register_box_title')
                     </strong>
-                </div><!--card-header-->
+                </div>
 
                 <div class="card-body">
                     {{ html()->form('POST', route('frontend.auth.register.post'))->open() }}
@@ -24,8 +24,8 @@
                                         ->placeholder(__('validation.attributes.frontend.first_name'))
                                         ->attribute('maxlength', 191)
                                         ->required()}}
-                                </div><!--col-->
-                            </div><!--row-->
+                                </div>
+                            </div>
 
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
@@ -36,9 +36,9 @@
                                         ->placeholder(__('validation.attributes.frontend.last_name'))
                                         ->attribute('maxlength', 191)
                                         ->required() }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="row">
                             <div class="col">
@@ -50,9 +50,9 @@
                                         ->placeholder(__('validation.attributes.frontend.email'))
                                         ->attribute('maxlength', 191)
                                         ->required() }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="row">
                             <div class="col">
@@ -63,9 +63,9 @@
                                         ->class('form-control')
                                         ->placeholder(__('validation.attributes.frontend.password'))
                                         ->required() }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="row">
                             <div class="col">
@@ -76,26 +76,26 @@
                                         ->class('form-control')
                                         ->placeholder(__('validation.attributes.frontend.password_confirmation'))
                                         ->required() }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
+                                </div>
+                            </div>
+                        </div>
 
                         @if(config('access.captcha.registration'))
                             <div class="row">
                                 <div class="col">
                                     @captcha
                                     {{ html()->hidden('captcha_status', 'true') }}
-                                </div><!--col-->
-                            </div><!--row-->
+                                </div>
+                            </div>
                         @endif
 
                         <div class="row">
                             <div class="col">
                                 <div class="form-group mb-0 clearfix">
                                     {{ form_submit(__('labels.frontend.auth.register_button')) }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
+                                </div>
+                            </div>
+                        </div>
                     {{ html()->form()->close() }}
 
                     <div class="row">
@@ -103,12 +103,12 @@
                             <div class="text-center">
                                 @include('frontend.auth.includes.socialite')
                             </div>
-                        </div><!--/ .col -->
-                    </div><!-- / .row -->
-                </div><!-- card-body -->
-            </div><!-- card -->
-        </div><!-- col-md-8 -->
-    </div><!-- row -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('after-scripts')

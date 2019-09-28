@@ -10,7 +10,7 @@
                     <strong>
                         @lang('labels.frontend.passwords.reset_password_box_title')
                     </strong>
-                </div><!--card-header-->
+                </div>
 
                 <div class="card-body">
 
@@ -32,20 +32,20 @@
                                         ->attribute('maxlength', 191)
                                         ->required()
                                         ->autofocus() }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="row">
                             <div class="col">
                                 <div class="form-group mb-0 clearfix">
                                     {{ form_submit(__('labels.frontend.passwords.send_password_reset_link_button')) }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
+                                </div>
+                            </div>
+                        </div>
                     {{ html()->form()->close() }}
-                </div><!-- card-body -->
-            </div><!-- card -->
-        </div><!-- col-6 -->
-    </div><!-- row -->
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

@@ -12,12 +12,9 @@
                         @lang('labels.backend.access.roles.management')
                         <small class="text-muted">@lang('labels.backend.access.roles.edit')</small>
                     </h4>
-                </div><!--col-->
-            </div><!--row-->
-            <!--row-->
-
+                </div>
+            </div>           
             <hr />
-
             <div class="row mt-4">
                 <div class="col">
                     <div class="form-group row">
@@ -31,8 +28,8 @@
                                 ->placeholder(__('validation.attributes.backend.access.roles.name'))
                                 ->attribute('maxlength', 191)
                                 ->required() }}
-                        </div><!--col-->
-                    </div><!--form-group-->
+                        </div>
+                    </div>
 
                     <div class="form-group row">
                         {{ html()->label(__('validation.attributes.backend.access.roles.associated_permissions'))
@@ -54,23 +51,22 @@
                                     </div>
                                 @endforeach
                             @endif
-                        </div><!--col-->
-                    </div><!--form-group-->
-                </div><!--col-->
-            </div><!--row-->
-        </div><!--card-body-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="card-footer">
             <div class="row">
                 <div class="col">
                     {{ form_cancel(route('admin.auth.role.index'), __('buttons.general.cancel')) }}
-                </div><!--col-->
-
+                </div>
                 <div class="col text-right">
                     {{ form_submit(__('buttons.general.crud.update')) }}
-                </div><!--col-->
-            </div><!--row-->
-        </div><!--card-footer-->
-    </div><!--card-->
+                </div>
+            </div>
+        </div>
+    </div>
 {{ html()->closeModelForm() }}
 @endsection

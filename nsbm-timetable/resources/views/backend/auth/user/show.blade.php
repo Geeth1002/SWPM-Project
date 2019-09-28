@@ -15,8 +15,8 @@
                     @lang('labels.backend.access.users.management')
                     <small class="text-muted">@lang('labels.backend.access.users.view')</small>
                 </h4>
-            </div><!--col-->
-        </div><!--row-->
+            </div>
+        </div>
 
         <div class="row mt-4 mb-4">
             <div class="col">
@@ -29,11 +29,11 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="overview" role="tabpanel" aria-expanded="true">
                         @include('backend.auth.user.show.tabs.overview')
-                    </div><!--tab-->
-                </div><!--tab-content-->
-            </div><!--col-->
-        </div><!--row-->
-    </div><!--card-body-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="card-footer">
         <div class="row">
@@ -45,8 +45,8 @@
                         <strong>@lang('labels.backend.access.users.tabs.content.overview.deleted_at'):</strong> {{ timezone()->convertToLocal($user->deleted_at) }} ({{ $user->deleted_at->diffForHumans() }})
                     @endif
                 </small>
-            </div><!--col-->
-        </div><!--row-->
-    </div><!--card-footer-->
-</div><!--card-->
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

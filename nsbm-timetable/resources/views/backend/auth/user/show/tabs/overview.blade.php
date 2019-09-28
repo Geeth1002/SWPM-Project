@@ -48,4 +48,4 @@
             </tr>
         </table>
     </div>
-</div><!--table-responsive-->
+</div>

@@ -10,7 +10,7 @@
                     <strong>
                         @lang('labels.frontend.contact.box_title')
                     </strong>
-                </div><!--card-header-->
+                </div>
 
                 <div class="card-body">
                     {{ html()->form('POST', route('frontend.contact.send'))->open() }}
@@ -25,9 +25,9 @@
                                         ->attribute('maxlength', 191)
                                         ->required()
                                         ->autofocus() }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="row">
                             <div class="col">
@@ -39,9 +39,9 @@
                                         ->placeholder(__('validation.attributes.frontend.email'))
                                         ->attribute('maxlength', 191)
                                         ->required() }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="row">
                             <div class="col">
@@ -53,9 +53,9 @@
                                         ->placeholder(__('validation.attributes.frontend.phone'))
                                         ->attribute('maxlength', 191)
                                         ->required() }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="row">
                             <div class="col">
@@ -67,31 +67,31 @@
                                         ->placeholder(__('validation.attributes.frontend.message'))
                                         ->attribute('rows', 3)
                                         ->required() }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
+                                </div>
+                            </div>
+                        </div>
 
                         @if(config('access.captcha.contact'))
                             <div class="row">
                                 <div class="col">
                                     @captcha
                                     {{ html()->hidden('captcha_status', 'true') }}
-                                </div><!--col-->
-                            </div><!--row-->
+                                </div>
+                            </div>
                         @endif
 
                         <div class="row">
                             <div class="col">
                                 <div class="form-group mb-0 clearfix">
                                     {{ form_submit(__('labels.frontend.contact.button')) }}
-                                </div><!--form-group-->
-                            </div><!--col-->
-                        </div><!--row-->
+                                </div>
+                            </div>
+                        </div>
                     {{ html()->form()->close() }}
-                </div><!--card-body-->
-            </div><!--card-->
-        </div><!--col-->
-    </div><!--row-->
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('after-scripts')

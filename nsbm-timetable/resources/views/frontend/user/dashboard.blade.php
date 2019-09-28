@@ -10,7 +10,7 @@
                     <strong>
                         <i class="fas fa-tachometer-alt"></i> @lang('navs.frontend.dashboard')
                     </strong>
-                </div><!--card-header-->
+                </div>
 
                 <div class="card-body">
                     <div class="row">
@@ -50,8 +50,8 @@
                                     <div class="card-body">
                                         NSBM Green University Town
                                     </div>
-                                 </div><!--card-->
-                            </div><!--col-md-4-->
+                                 </div>
+                            </div>
 
                         <div class="col-md-8 order-2 order-sm-1">
                             <div class="row">
@@ -65,49 +65,49 @@
                                                   <br><br>
                                                 </div>
                                             </div>
-                                </div><!--col-md-6-->
-                            </div><!--row-->
+                                </div>
+                            </div>
 
                             <div class="row">
                                 <div class="col">
                                     <div class="card mb-4">
                                         <div class="card-header">
                                             About US
-                                        </div><!--card-header-->
+                                        </div>
 
                                         <div class="card-body">
                                             The National School of Business Management is a state degree awarding institute in Sri Lanka, established under Companies Act No. 07 of 2007 and having company number PB 4833 and also it is the first ever green university in South Asia specialising in Computer sciences, Business, Engineering and Technology
-                                        </div><!--card-body-->
-                                    </div><!--card-->
-                                </div><!--col-md-6-->
-                            </div><!--row-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="row">
                                 <div class="col">
                                     <div class="card mb-4">
                                         <div class="card-header">
                                             Programme Office
-                                        </div><!--card-header-->
+                                        </div>
 
                                         <div class="card-body">
                                             Tel : +94 11 544 5000<br>
                                             Email : inquiries@nsbm.lk
-                                        </div><!--card-body-->
-                                    </div><!--card-->
-                                </div><!--col-md-6-->
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="col">
                                     <div class="card mb-4">
                                         <div class="card-header">
                                             School of Business
-                                        </div><!--card-header-->
+                                        </div>
 
                                         <div class="card-body">
                                             Tel : +94 11 544 5100<br>
                                             Email : sob@nsbm.lk
-                                        </div><!--card-body-->
-                                    </div><!--card-->
-                                </div><!--col-md-6-->
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="w-100"></div>
 
@@ -115,32 +115,32 @@
                                     <div class="card mb-4">
                                         <div class="card-header">
                                             School of Computing
-                                        </div><!--card-header-->
+                                        </div>
 
                                         <div class="card-body">
                                             Tel : +94 11 544 6000<br>
                                             Email : soc@nsbm.lk
-                                        </div><!--card-body-->
-                                    </div><!--card-->
-                                </div><!--col-md-6-->
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="col">
                                     <div class="card mb-4">
                                         <div class="card-header">
                                             School of Engineering
-                                        </div><!--card-header-->
+                                        </div>
 
                                         <div class="card-body">
                                             Tel : +94 11 544 6100<br>
                                             Email : infoeng@nsbm.lk
-                                        </div><!--card-body-->
-                                    </div><!--card-->
-                                </div><!--col-md-6-->
-                            </div><!--row-->
-                        </div><!--col-md-8-->
-                    </div><!-- row -->
-                </div> <!-- card-body -->
-            </div><!-- card -->
-        </div><!-- row -->
-    </div><!-- row -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

@@ -15,7 +15,7 @@
                 <br><br><br><br><br>
                 <h3><b>Smart Time Table Management System</b></h3><br>
             </div>
-    </div><!--col-->
-</div><!--row-->
+    </div>
+</div>
 </body>
 @endsection

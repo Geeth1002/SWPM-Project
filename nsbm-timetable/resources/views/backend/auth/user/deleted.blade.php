@@ -15,8 +15,8 @@
                     @lang('labels.backend.access.users.management')
                     <small class="text-muted">@lang('labels.backend.access.users.deleted')</small>
                 </h4>
-            </div><!--col-->
-        </div><!--row-->
+            </div>
+        </div>
 
         <div class="row mt-4">
             <div class="col">
@@ -57,21 +57,21 @@
                         </tbody>
                     </table>
                 </div>
-            </div><!--col-->
-        </div><!--row-->
+            </div>
+        </div>
         <div class="row">
             <div class="col-7">
                 <div class="float-left">
                     {!! $users->total() !!} {{ trans_choice('labels.backend.access.users.table.total', $users->total()) }}
                 </div>
-            </div><!--col-->
+            </div>
 
             <div class="col-5">
                 <div class="float-right">
                     {!! $users->render() !!}
                 </div>
-            </div><!--col-->
-        </div><!--row-->
-    </div><!--card-body-->
-</div><!--card-->
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

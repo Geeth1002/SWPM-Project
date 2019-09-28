@@ -16,13 +16,13 @@
                         @endif
                     @endforeach
                 </div>
-            </div><!--form-group-->
+            </div>
 
             <div class="form-group hidden" id="avatar_location">
                 {{ html()->file('avatar_location')->class('form-control') }}
-            </div><!--form-group-->
-        </div><!--col-->
-    </div><!--row-->
+            </div>
+        </div>
+    </div>
 
     <div class="row">
         <div class="col">
@@ -35,9 +35,9 @@
                     ->attribute('maxlength', 191)
                     ->required()
                     ->autofocus() }}
-            </div><!--form-group-->
-        </div><!--col-->
-    </div><!--row-->
+            </div>
+        </div>
+    </div>
 
     <div class="row">
         <div class="col">
@@ -49,9 +49,9 @@
                     ->placeholder(__('validation.attributes.frontend.last_name'))
                     ->attribute('maxlength', 191)
                     ->required() }}
-            </div><!--form-group-->
-        </div><!--col-->
-    </div><!--row-->
+            </div>
+        </div>
+    </div>
 
     @if ($logged_in_user->canChangeEmail())
         <div class="row">
@@ -68,18 +68,18 @@
                         ->placeholder(__('validation.attributes.frontend.email'))
                         ->attribute('maxlength', 191)
                         ->required() }}
-                </div><!--form-group-->
-            </div><!--col-->
-        </div><!--row-->
+                </div>
+            </div>
+        </div>
     @endif
 
     <div class="row">
         <div class="col">
             <div class="form-group mb-0 clearfix">
                 {{ form_submit(__('labels.general.buttons.update')) }}
-            </div><!--form-group-->
-        </div><!--col-->
-    </div><!--row-->
+            </div>
+        </div>
+    </div>
 {{ html()->closeModelForm() }}
 
 @push('after-scripts')

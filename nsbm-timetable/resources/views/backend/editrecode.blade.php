@@ -14,24 +14,21 @@
                     {{$error}}
                 </div>
                 @endforeach
-                    <form action="/updatedetails" method="post" >
-                        {{csrf_field()}}
-
-                            <input type="hidden" class="form-control form-rounded" name="uid" value="{{$timetableById->id}}">
-                            <input type="text" class="form-control" name="ubatch" value="{{$timetableById->batch}}"><br>
-                            <input type="text" class="form-control" name="uhall" value="{{$timetableById->hall}}"><br>
-                            <input type="text" class="form-control" name="umodule" value="{{$timetableById->module}}"><br>
-                            <input type="text" class="form-control" name="ulecture" value="{{$timetableById->lecturer}}"><br>
-                            <input type="text" class="form-control" name="udate" value="{{$timetableById->date}}"><br>
-                            <input type="text" class="form-control" name="utime" value="{{$timetableById->time}}"><br>
-                            <br>
-                            <input type="submit" class="btn btn-success" value="Update">
-
-                            <a href="/admin/dashboard" class="btn btn-danger">Cancel</a>
-                        </form>
+                <form action="/updatedetails" method="post" >
+                    {{csrf_field()}}
+                        <input type="hidden" class="form-control form-rounded" name="uid" value="{{$timetableById->id}}">
+                        <input type="text" class="form-control" name="ubatch" value="{{$timetableById->batch}}"><br>
+                        <input type="text" class="form-control" name="uhall" value="{{$timetableById->hall}}"><br>
+                        <input type="text" class="form-control" name="umodule" value="{{$timetableById->module}}"><br>
+                        <input type="text" class="form-control" name="ulecture" value="{{$timetableById->lecturer}}"><br>
+                        <input type="text" class="form-control" name="udate" value="{{$timetableById->date}}"><br>
+                        <input type="text" class="form-control" name="utime" value="{{$timetableById->time}}"><br>
+                        <br>
+                         <input type="submit" class="btn btn-success" value="Update">
+                        <a href="/admin/dashboard" class="btn btn-danger">Cancel</a>
+                </form>
         </div>
     </diV>
-
 @endsection
 
 

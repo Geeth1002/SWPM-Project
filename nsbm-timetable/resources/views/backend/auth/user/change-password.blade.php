@@ -20,8 +20,8 @@
                     <div class="small text-muted">
                         @lang('labels.backend.access.users.change_password_for', ['user' => $user->name])
                     </div>
-                </div><!--col-->
-            </div><!--row-->
+                </div>
+            </div>
 
             <hr />
 
@@ -36,8 +36,8 @@
                                 ->placeholder( __('validation.attributes.backend.access.users.password'))
                                 ->required()
                                 ->autofocus() }}
-                        </div><!--col-->
-                    </div><!--form-group-->
+                        </div>
+                    </div>
 
                     <div class="form-group row">
                         {{ html()->label(__('validation.attributes.backend.access.users.password_confirmation'))->class('col-md-2 form-control-label')->for('password_confirmation') }}
@@ -47,23 +47,23 @@
                                 ->class('form-control')
                                 ->placeholder( __('validation.attributes.backend.access.users.password_confirmation'))
                                 ->required() }}
-                        </div><!--col-->
-                    </div><!--form-group-->
-                </div><!--col-->
-            </div><!--row-->
-        </div><!--card-body-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="card-footer">
             <div class="row">
                 <div class="col">
                     {{ form_cancel(route('admin.auth.user.index'), __('buttons.general.cancel')) }}
-                </div><!--col-->
+                </div>
 
                 <div class="col text-right">
                     {{ form_submit(__('buttons.general.crud.update')) }}
-                </div><!--row-->
-            </div><!--row-->
-        </div><!--card-footer-->
-    </div><!--card-->
+                </div>
+            </div>
+        </div>
+    </div>
 {{ html()->form()->close() }}
 @endsection

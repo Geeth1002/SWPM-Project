@@ -31,21 +31,21 @@
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade show active pt-3" id="profile" aria-labelledby="profile-tab">
                                 @include('frontend.user.account.tabs.profile')
-                            </div><!--tab panel profile-->
+                            </div>
 
                             <div role="tabpanel" class="tab-pane fade show pt-3" id="edit" aria-labelledby="edit-tab">
                                 @include('frontend.user.account.tabs.edit')
-                            </div><!--tab panel profile-->
+                            </div>
 
                             @if($logged_in_user->canChangePassword())
                                 <div role="tabpanel" class="tab-pane fade show pt-3" id="password" aria-labelledby="password-tab">
                                     @include('frontend.user.account.tabs.change-password')
-                                </div><!--tab panel change password-->
+                                </div>
                             @endif
-                        </div><!--tab content-->
-                    </div><!--tab panel-->
-                </div><!--card body-->
-            </div><!-- card -->
-        </div><!-- col-xs-12 -->
-    </div><!-- row -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
