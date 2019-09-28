@@ -8,43 +8,22 @@ use App\Events\Frontend\Auth\UserRegistered;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use App\Repositories\Frontend\Auth\UserRepository;
 
-/**
- * Class RegisterController.
- */
 class RegisterController extends Controller
 {
     use RegistersUsers;
 
-    /**
-     * @var UserRepository
-     */
     protected $userRepository;
 
-    /**
-     * RegisterController constructor.
-     *
-     * @param UserRepository $userRepository
-     */
     public function __construct(UserRepository $userRepository)
     {
         $this->userRepository = $userRepository;
     }
 
-    /**
-     * Where to redirect users after login.
-     *
-     * @return string
-     */
     public function redirectPath()
     {
         return route(home_route());
     }
 
-    /**
-     * Show the application registration form.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function showRegistrationForm()
     {
         abort_unless(config('access.registration'), 404);
@@ -52,12 +31,6 @@ class RegisterController extends Controller
         return view('frontend.auth.register');
     }
 
-    /**
-     * @param RegisterRequest $request
-     *
-     * @throws \Throwable
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
-     */
     public function register(RegisterRequest $request)
     {
         abort_unless(config('access.registration'), 404);

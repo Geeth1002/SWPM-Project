@@ -13,7 +13,6 @@ class TimetableController extends Controller
 
 
     public function store(Request $request){
-       //dd($request->all());
        $timetable=new Timetable;
 
         $this->validate($request,[

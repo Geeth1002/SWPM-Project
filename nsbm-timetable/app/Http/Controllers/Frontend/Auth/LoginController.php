@@ -10,49 +10,25 @@ use App\Events\Frontend\Auth\UserLoggedOut;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use LangleyFoxall\LaravelNISTPasswordRules\PasswordRules;
 
-/**
- * Class LoginController.
- */
 class LoginController extends Controller
 {
     use AuthenticatesUsers;
 
-    /**
-     * Where to redirect users after login.
-     *
-     * @return string
-     */
     public function redirectPath()
     {
         return route(home_route());
     }
 
-    /**
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
     public function showLoginForm()
     {
         return view('frontend.auth.login');
     }
 
-    /**
-     * Get the login username to be used by the controller.
-     *
-     * @return string
-     */
     public function username()
     {
         return config('access.users.username');
     }
 
-    /**
-     * Validate the user login request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return void
-     *
-     * @throws \Illuminate\Validation\ValidationException
-     */
     protected function validateLogin(Request $request)
     {
         $request->validate([
@@ -64,15 +40,6 @@ class LoginController extends Controller
         ]);
     }
 
-    /**
-     * The user has been authenticated.
-     *
-     * @param Request $request
-     * @param         $user
-     *
-     * @throws GeneralException
-     * @return \Illuminate\Http\RedirectResponse
-     */
     protected function authenticated(Request $request, $user)
     {
         // Check to see if the users account is confirmed and active
@@ -104,13 +71,6 @@ class LoginController extends Controller
         return redirect()->intended($this->redirectPath());
     }
 
-    /**
-     * Log the user out of the application.
-     *
-     * @param Request $request
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function logout(Request $request)
     {
         // Remove the socialite session variable if exists
