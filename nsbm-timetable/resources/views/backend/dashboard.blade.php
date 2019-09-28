@@ -95,7 +95,7 @@
                                                 <td>{{ $data->updated_at }}</td>
                                                 <td>
                                                     <a href="/updaterecode/{{ $data->id}}" class ="btn btn-success">Update</a>
-                                                    <a href="/deleterecode/{{ $data->id}}" class ="btn btn-danger">Delete</a>
+                                                    <a href="/deleterecode/{{ $data->id}}" class ="btn btn-danger" onclick="return confirm('Do you want to delete record delails?')">Delete</a>
                                                 </td>
                                             </tr>
                                              @endforeach
