@@ -71,7 +71,7 @@
                                             </table>
                                                     <br>
 
-                                        <table class="table table-dark">
+                                        <table class="table table-dark table-responsive">
                                             <th>ID</th>
                                             <th>Batch Name</th>
                                             <th>Hall/Lab</th>

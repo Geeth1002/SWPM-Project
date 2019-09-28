@@ -6,7 +6,7 @@
 
         <div class="text-center">
 
-            <br><h2>Edit Table view</h2><br>
+            <br><h2>Edit Table View</h2><br>
         </div>
         <div class="col-md-12">
                 @foreach($errors->all() as $error)
@@ -17,7 +17,7 @@
                     <form action="/updatedetails" method="post" >
                         {{csrf_field()}}
 
-                            <input type="hidden" class="form-control" name="uid" value="{{$timetableById->id}}">
+                            <input type="hidden" class="form-control form-rounded" name="uid" value="{{$timetableById->id}}">
                             <input type="text" class="form-control" name="ubatch" value="{{$timetableById->batch}}"><br>
                             <input type="text" class="form-control" name="uhall" value="{{$timetableById->hall}}"><br>
                             <input type="text" class="form-control" name="umodule" value="{{$timetableById->module}}"><br>
