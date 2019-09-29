@@ -76,8 +76,8 @@
                                                 <td>{{ $data->created_at }}</td>
                                                 <td>{{ $data->updated_at }}</td>
                                                 <td>
-                                                    <a href="/updaterecode/{{ $data->id}}" class ="btn btn-success">Update</a>
-                                                    <a href="/deleterecode/{{ $data->id}}" class ="btn btn-danger" onclick="return confirm('Do you want to delete record delails?')">Delete</a>
+                                                    <a href="/updaterecode/{{ $data->id}}" class ="btn btn-success" style="margin: 2px">Update</a>
+                                                    <a href="/deleterecode/{{ $data->id}}" class ="btn btn-danger" style="margin: 2px" onclick="return confirm('Do You Want to Delete Record Delails?')">Delete</a>
                                                 </td>
                                             </tr>
                                              @endforeach
